@@ -14,7 +14,7 @@ function ForgotPasswordPage() {
         const btnEle = document.getElementById("btn_reset");
         btnEle.disabled = true;
         try {
-            const url = `http://localhost:1000/api/password-reset`;
+            const url = `https://password-reset-sj.onrender.com/api/password-reset`;
             const { data } = await axios.post(url, { email });
             setMsg(data.message);
             setError("");
