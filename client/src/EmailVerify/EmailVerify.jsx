@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 const EmailVerify = () => {
 	const [validUrl, setValidUrl] = useState(false);
 	const param = useParams();
-    const url = `http://localhost:1000/api/users/${param.id}/verify/${param.token}`;
+    const url = `https://password-reset-sj.onrender.com/api/users/${param.id}/verify/${param.token}`;
 
 	useEffect(() => {
 		const verifyEmailUrl = async () => {
