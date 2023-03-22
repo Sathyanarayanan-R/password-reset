@@ -28,7 +28,7 @@ function RegisterPage() {
           const btnEle = document.getElementById("btn_register");
           btnEle.disabled = true;
           try {
-              const url = "http://localhost:1000/api/users";
+              const url = "https://password-reset-sj.onrender.com/api/users";
               const { input: res } = await axios.post(url, input);
               navigate("/login");
               setMsg(res.message);
