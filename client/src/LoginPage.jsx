@@ -22,7 +22,7 @@ function LoginPage() {
         const btnEle = document.getElementById("btn_login");
         btnEle.disabled = true;
         try {
-            const url = "http://localhost:1000/api/auth";
+            const url = "https://password-reset-sj.onrender.com/api/auth";
             const { data: res } = await axios.post(url, data);
             localStorage.setItem("token", res.data);
             window.location = "/";
